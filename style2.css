@@ -1,0 +1,263 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .5s ease-in-out;
+  }
+
+  header:after, .container:after, footer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h1, h2, h5, h6 {
+  font-family: "Arimo", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  }
+  h3, h4 {
+  font-family: "Acme", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  }
+  a {
+  text-decoration: none;
+  outline: none;
+  }
+
+  img {
+  display: block;
+  }
+
+  ul {
+  list-style: none;
+  }
+
+  body {
+    background: #f3f3f3;
+    font-family: 'Arimo', sans-serif;
+    font-size: .9rem;
+    position: relative;
+  }
+
+  header {
+    width: 100%;
+    height: 82px;
+    position: relative;
+    background-color: rgba(0, 0, 0, .4);
+  }
+  footer {
+    width: 100%;
+    height: 82px;
+    position: relative;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1495px;
+  }
+  .navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #menubutton {
+    display: none;
+  }
+  .logo {
+    margin-top: 8px;
+    font-family: "Parisienne", sans-serif;
+    font-size: 2.5rem;
+    color: white;
+  }
+  #menu {
+    margin-top: 8px;
+  }
+  #menu > li {
+    display: inline-block;
+    color: white;
+    margin: 20px;
+  }
+  #menu > li > a {
+    color: white;
+    font-family: 'Alegreya SC', serif;
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+  #menu > li > a:hover {
+    color: #c9b176;
+  }
+  .social {
+    margin-top: 23px;
+  }
+  .social > a {
+    margin: 10px;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .social > a:hover {
+    color: #c9b176;
+  }
+  .firstcaption {
+    display: block;
+    height: 985px;
+    position: relative;
+    border: 0px solid black;
+  }
+  .firstcaption ::before {
+   content: " ";
+   position: absolute;
+   right: -220px;
+   top: -91px;
+   width: 1920px;
+   height: 1075px;
+   z-index: -1;
+   background-image: url("headerback.png");
+  }
+  .fccontent {
+    display: block;
+    text-align: center;
+    position: relative;
+    color: white;
+    padding-top: 220px;
+  }
+  .fccontent ::before {
+   content: " ";
+   position: absolute;
+   right: 660px;
+   top: 930px;
+   width: 134px;
+   height: 134px;
+   z-index: -1;
+   background-image: url("breadic.png");
+  }
+  .fccontent > h1 {
+    font-family: 'Alegreya SC', serif;
+    font-size:6rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 60px;
+  }
+  .curvedline {
+    width: 17%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
+ .fccontent > p {
+     letter-spacing: 5px;
+     font-size: 1.2rem;
+     margin-bottom: 60px;
+ }
+  .fccontent > a {
+    font-family: 'Alegreya SC', serif;
+    color: white;
+    font-size: .9rem;
+    padding: 10px 40px;
+    letter-spacing: 5px;
+    background: rgba(0, 0, 0, .3);
+  }
+  .fccontent > a:hover {
+    background: rgba(209, 107, 4, .5);
+  }
+
+  .post1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+    height: 895px;
+    border: 2px solid black;
+    padding-top: 100px;
+  }
+  .post1 ::before {
+    content: " ";
+    position: absolute;
+    right: -210px;
+    top: 0px;
+    width: 1920px;
+    height: 895px;
+    z-index: -2;
+    background-image: url("paperback3.png")
+  }
+  .pb1 {
+    display: block;
+    width: 570px;
+    text-align: center;
+  }
+  .pb1 h3 {
+    font-size: 3.5rem;
+    color: #56534c;
+    font-weight: 600;
+  }
+
+  #mem {
+    font-size: 1.1rem;
+    color: #a47d5e;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  .pb1 h4 {
+    font-size: 2rem;
+    color: #56534c;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  .pb1 > p {
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: #585756;
+    margin-bottom: 30px;
+  }
+  .pb2 {
+    display: flex;
+    position: relative;
+    width: 560px;
+    height: 560px;
+    flex-wrap: wrap;
+}
+  .pb2 > img {
+    margin: 10px;
+    width: 260px;
+    height: 260px;
+  }
+  .pb2_add {
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 115px;
+  }
+  .chefs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+    margin-left: 55px;
+  }
+  .chefs > span {
+    width: 150px;
+    height: 70px;
+    border-bottom: 2px solid #c5c5c5;
+    border-top: 2px solid #c5c5c5;
+    font-size: 1.5rem;
+    padding: 15px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #585756;
+  }
+  .chefquote {
+
+  }
+  .chefquote p {
+    font-family: "Parisienne", sans-serif;
+    font-size: 2.2rem;
+    color: #a47d5e;
+  }
+  .chefquote i {
+    font-size: 2rem;
+    display: block;
+  }
